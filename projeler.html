@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projelerim</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    backdrop-filter:blur(20px);
+    background:rgba(0,0,0,.5);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    opacity:.8;
+    transition:.3s;
+}
+
+nav a:hover{
+    opacity:1;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(180deg,#000,#111);
+}
+
+.hero h1{
+    font-size:clamp(3rem,8vw,7rem);
+    font-weight:800;
+    margin-bottom:20px;
+    animation:fadeUp 1s ease;
+}
+
+.hero p{
+    font-size:clamp(1rem,2vw,1.5rem);
+    color:#bdbdbd;
+    max-width:700px;
+    animation:fadeUp 1.5s ease;
+}
+
+.btn{
+    margin-top:35px;
+    padding:15px 35px;
+    border-radius:999px;
+    background:#0071e3;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2487f0;
+    transform:scale(1.05);
+}
+
+/* Sections */
+.section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:100px 8%;
+}
+
+.project{
+    width:100%;
+    max-width:1300px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.project.reverse{
+    direction:rtl;
+}
+
+.project.reverse>*{
+    direction:ltr;
+}
+
+.project img{
+    width:100%;
+    border-radius:30px;
+    box-shadow:0 20px 50px rgba(255,255,255,.08);
+}
+
+.project h2{
+    font-size:clamp(2rem,5vw,4rem);
+    margin-bottom:20px;
+}
+
+.project p{
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.project .link{
+    display:inline-block;
+    margin-top:25px;
+    color:#2997ff;
+    text-decoration:none;
+    font-size:18px;
+}
+
+/* Cards */
+.projects-grid{
+    background:#0b0b0b;
+    padding:120px 8%;
+}
+
+.projects-grid h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:60px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#111;
+    border-radius:25px;
+    overflow:hidden;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#aaa;
+    line-height:1.6;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:60px 20px;
+    color:#777;
+    background:#000;
+}
+
+/* Animation */
+.hidden{
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:900px){
+
+.project{
+    grid-template-columns:1fr;
+}
+
+.project.reverse{
+    direction:ltr;
+}
+
+nav ul{
+    display:none;
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Portfolio</div>
+    <ul>
+        <li><a href="#home">Ana Sayfa</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Projelerim</h1>
+    <p>
+        Modern tasarım, güçlü yazılım çözümleri ve yenilikçi fikirlerle
+        geliştirdiğim projeleri keşfedin.
+    </p>
+    <a href="#projects" class="btn">Projeleri Gör</a>
+</section>
+
+<section class="section hidden">
+    <div class="project">
+        <div>
+            <h2>Yapay Zeka Platformu</h2>
+            <p>
+                Kullanıcıların içerik üretmesini sağlayan gelişmiş yapay zeka
+                destekli web uygulaması. Modern arayüz ve yüksek performans.
+            </p>
+            <a href="#" class="link">Detayları Gör →</a>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200" alt="">
+    </div>
+</section>
+
+<section class="section hidden">
+    <div class="project reverse">
+        <div>
+            <h2>E-Ticaret Sistemi</h2>
+            <p>
+                Hızlı ödeme altyapısı, gelişmiş yönetim paneli ve modern kullanıcı
+                deneyimi sunan profesyonel e-ticaret platformu.
+            </p>
+            <a href="#" class="link">Detayları Gör →</a>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1200" alt="">
+    </div>
+</section>
+
+<section class="projects-grid" id="projects">
+
+    <h2>Diğer Projeler</h2>
+
+    <div class="grid">
+
+        <div class="card hidden">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200">
+            <div class="card-content">
+                <h3>Mobil Uygulama</h3>
+                <p>iOS ve Android uyumlu modern uygulama tasarımı.</p>
+            </div>
+        </div>
+
+        <div class="card hidden">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200">
+            <div class="card-content">
+                <h3>Dashboard</h3>
+                <p>Gerçek zamanlı veri takibi ve raporlama sistemi.</p>
+            </div>
+        </div>
+
+        <div class="card hidden">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200">
+            <div class="card-content">
+                <h3>Web Platformu</h3>
+                <p>Yüksek performanslı ve ölçeklenebilir altyapı.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="contact">
+    <h3>İletişim</h3>
+    <br>
+    <p>mail@ornek.com</p>
+    <br>
+    <p>© 2026 Tüm Hakları Saklıdır.</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".hidden").forEach((el)=>{
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
