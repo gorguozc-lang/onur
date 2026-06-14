@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sıkça Sorulan Sorular</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+}
+
+body{
+    background:#f5f5f7;
+    color:#1d1d1f;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:100px 20px 60px;
+    background:#fff;
+}
+
+header h1{
+    font-size:4rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+header p{
+    color:#6e6e73;
+    font-size:1.2rem;
+}
+
+.container{
+    max-width:900px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.faq{
+    background:#fff;
+    border-radius:20px;
+    margin-bottom:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.faq:hover{
+    transform:translateY(-2px);
+}
+
+details{
+    width:100%;
+}
+
+summary{
+    list-style:none;
+    cursor:pointer;
+    padding:25px;
+    font-size:1.1rem;
+    font-weight:600;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
+
+summary::after{
+    content:"+";
+    font-size:1.5rem;
+    color:#0071e3;
+    transition:0.3s;
+}
+
+details[open] summary::after{
+    transform:rotate(45deg);
+}
+
+.answer{
+    padding:0 25px 25px;
+    color:#6e6e73;
+    font-size:1rem;
+}
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+    color:#86868b;
+}
+
+.search-box{
+    max-width:700px;
+    margin:30px auto 0;
+}
+
+.search-box input{
+    width:100%;
+    padding:18px 24px;
+    border:none;
+    border-radius:999px;
+    background:#fff;
+    font-size:1rem;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    outline:none;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>SSS</h1>
+    <p>Sıkça Sorulan Sorular</p>
+
+    <div class="search-box">
+        <input type="text" placeholder="Bir soru ara...">
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="faq">
+        <details>
+            <summary>Hizmetlerinizi nasıl satın alabilirim?</summary>
+            <div class="answer">
+                Web sitemizdeki iletişim formunu doldurarak veya bizimle
+                doğrudan iletişime geçerek hizmet satın alabilirsiniz.
+            </div>
+        </details>
+    </div>
+
+    <div class="faq">
+        <details>
+            <summary>Ödeme yöntemleri nelerdir?</summary>
+            <div class="answer">
+                Kredi kartı, banka havalesi ve diğer online ödeme
+                yöntemlerini kabul ediyoruz.
+            </div>
+        </details>
+    </div>
+
+    <div class="faq">
+        <details>
+            <summary>İade politikası nasıl çalışır?</summary>
+            <div class="answer">
+                Satın alınan hizmete göre değişmekle birlikte,
+                belirli koşullar altında ücret iadesi yapılabilir.
+            </div>
+        </details>
+    </div>
+
+    <div class="faq">
+        <details>
+            <summary>Destek ekibine nasıl ulaşabilirim?</summary>
+            <div class="answer">
+                E-posta, canlı destek veya iletişim formu üzerinden
+                destek ekibimize ulaşabilirsiniz.
+            </div>
+        </details>
+    </div>
+
+    <div class="faq">
+        <details>
+            <summary>Çalışma saatleriniz nedir?</summary>
+            <div class="answer">
+                Hafta içi 09:00 - 18:00 saatleri arasında hizmet vermekteyiz.
+            </div>
+        </details>
+    </div>
+
+    <div class="faq">
+        <details>
+            <summary>Projeler ne kadar sürede teslim edilir?</summary>
+            <div class="answer">
+                Teslim süresi projenin kapsamına göre değişmektedir.
+                Ortalama süre 1 ila 4 hafta arasındadır.
+            </div>
+        </details>
+    </div>
+
+    <div class="faq">
+        <details>
+            <summary>Özel proje talepleri alıyor musunuz?</summary>
+            <div class="answer">
+                Evet. İhtiyacınıza özel çözümler geliştiriyor ve
+                projelendiriyoruz.
+            </div>
+        </details>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Tüm Hakları Saklıdır
+</footer>
+
+</body>
+</html>
