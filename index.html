@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kişisel Portföy</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px #ddd;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 8%;
+      gap: 40px;
+    }
+
+    .hero-text {
+      max-width: 550px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text h1 span {
+      color: #3b82f6;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 25px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .btn-blue {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-white {
+      background: white;
+      color: #3b82f6;
+      border: 2px solid #3b82f6;
+    }
+
+    .profile-card {
+      background: white;
+      padding: 25px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px #d5dce8;
+      text-align: center;
+      width: 300px;
+    }
+
+    .profile-card img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #3b82f6;
+      margin-bottom: 15px;
+    }
+
+    .profile-card h2 {
+      margin-bottom: 8px;
+    }
+
+    .profile-card p {
+      color: #666;
+    }
+
+    .skills {
+      margin-top: 18px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e8f1ff;
+      color: #3b82f6;
+      padding: 8px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 36px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+    }
+
+    footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 15px;
+}
+
+footer p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Portföyüm</div>
+
+    <nav>
+      <a href="#">Anasayfa</a>
+      <a href="#">Hakkımda</a>
+      <a href="#">Projelerim</a>
+      <a href="#">İletişim</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>Merhaba, Ben <span>Arda</span></h1>
+      <p>
+        Ben web tasarımı öğrenen bir öğrenciyim. HTML ve CSS kullanarak
+        modern, düzenli ve dikkat çekici web siteleri hazırlıyorum.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn-blue">Projelerimi Gör</a>
+        <a href="#" class="btn-white">Benimle İletişime Geç</a>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <img src="https://picsum.photos/300" alt="Profil Fotoğrafı">
+      <h2>Arda Özcan</h2>
+      <p>Web Tasarım Öğrencisi</p>
+
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Tasarım</span>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+  <p>© 2026 Arda Özcan | Tüm Hakları Saklıdır.</p>
+</footer>
+
+</body>
+</html>

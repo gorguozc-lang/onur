@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Onur Arda Özcan</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #eef7ff, #ffffff);
+            min-height:100vh;
+            color:#1e293b;
+        }
+
+        .iletisim-bolumu{
+            padding:80px 20px;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:auto;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap:40px;
+            align-items:center;
+        }
+
+        .iletisim-info{
+            padding:20px;
+        }
+
+        .iletisim-info h1{
+            font-size:3rem;
+            line-height:1.2;
+            margin-bottom:20px;
+            color:#0f172a;
+        }
+
+        .iletisim-info h1 span{
+            display:block;
+            color:#2563eb;
+            font-weight:600;
+        }
+
+        .iletisim-info p{
+            font-size:1.1rem;
+            color:#64748b;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .info-kartlari{
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+        }
+
+        .info-kart{
+            background:#fff;
+            padding:18px 22px;
+            border-radius:15px;
+            box-shadow:0 10px 30px rgba(37,99,235,0.08);
+            border:1px solid #e2e8f0;
+        }
+
+        .info-kart h3{
+            color:#2563eb;
+            margin-bottom:5px;
+        }
+
+        .iletisim-form{
+            background:#fff;
+            padding:40px;
+            border-radius:25px;
+            box-shadow:0 15px 40px rgba(37,99,235,0.12);
+        }
+
+        .iletisim-form h2{
+            margin-bottom:25px;
+            color:#0f172a;
+        }
+
+        .form-group{
+            margin-bottom:18px;
+        }
+
+        .form-group input,
+        .form-group textarea{
+            width:100%;
+            padding:15px;
+            border:1px solid #cbd5e1;
+            border-radius:12px;
+            outline:none;
+            transition:.3s;
+            font-size:1rem;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus{
+            border-color:#2563eb;
+            box-shadow:0 0 0 4px rgba(37,99,235,0.15);
+        }
+
+        textarea{
+            resize:none;
+            min-height:140px;
+        }
+
+        button{
+            width:100%;
+            padding:15px;
+            border:none;
+            border-radius:12px;
+            background:#2563eb;
+            color:white;
+            font-size:1rem;
+            font-weight:600;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+            transform:translateY(-2px);
+        }
+
+        @media(max-width:900px){
+            .container{
+                grid-template-columns:1fr;
+            }
+
+            .iletisim-info{
+                text-align:center;
+            }
+
+            .iletisim-info h1{
+                font-size:2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header></header>
+
+<main class="iletisim-bolumu">
+    <div class="container">
+
+        <div class="iletisim-info">
+            <h1>
+                Onur Arda Özcan
+                <span>ile iletişime geç</span>
+            </h1>
+
+            <p>
+                Projeleriniz, iş birlikleri veya herhangi bir konuda benimle
+                iletişime geçebilirsiniz. Mesajınızı bıraktığınızda en kısa
+                sürede dönüş yapacağım.
+            </p>
+
+            <div class="info-kartlari">
+
+                <div class="info-kart">
+                    <h3>E-Posta</h3>
+                    <p>ornek@mail.com</p>
+                </div>
+
+                <div class="info-kart">
+                    <h3>Telefon</h3>
+                    <p>+90 5XX XXX XX XX</p>
+                </div>
+
+                <div class="info-kart">
+                    <h3>Konum</h3>
+                    <p>Antalya, Türkiye</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="iletisim-form">
+            <h2>Mesaj Gönder</h2>
+
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Ad Soyad">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="E-posta Adresiniz">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Konu">
+                </div>
+
+                <div class="form-group">
+                    <textarea placeholder="Mesajınız"></textarea>
+                </div>
+
+                <button type="submit">
+                    Mesajı Gönder
+                </button>
+            </form>
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>
